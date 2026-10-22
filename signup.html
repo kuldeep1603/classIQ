@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up | ClassIQ</title>
+  <meta name="description" content="Create a free ClassIQ account and start learning web development, data science and app development today.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#c2f578">
+  <link rel="canonical" href="https://www.classiq.com/signup.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ClassIQ">
+  <meta property="og:title" content="Sign Up | ClassIQ">
+  <meta property="og:description" content="Create a free ClassIQ account and start learning web development, data science and app development today.">
+  <meta property="og:url" content="https://www.classiq.com/signup.html">
+  <meta property="og:image" content="https://www.classiq.com/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/poppins-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="ClassIQ home">
+        <img src="assets/images/logo.svg" width="49" height="49" alt="">
+        <span>ClassIQ</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="courses.html">Courses</a></li>
+        </ul>
+        <div class="nav-actions" data-auth-actions>
+          <a href="login.html" class="btn btn--dark">Login</a>
+          <a href="signup.html" class="btn btn--dark">SignUp</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="auth">
+    <section class="auth-card" aria-labelledby="signup-title">
+      <h1 id="signup-title">SignUp</h1>
+      <form data-auth-form="signup" novalidate>
+          <div class="field">
+            <label for="signup-email" class="visually-hidden">Email</label>
+            <input type="email" id="signup-email" name="email" placeholder="Enter Your Email" autocomplete="email" data-label="Email" aria-describedby="signup-email-error" required>
+            <span class="field__error" id="signup-email-error"></span>
+          </div>
+          <div class="field">
+            <label for="signup-fullname" class="visually-hidden">Full name</label>
+            <input type="text" id="signup-fullname" name="fullname" placeholder="Enter Your Fullname" autocomplete="name" data-label="Full name" aria-describedby="signup-fullname-error" required minlength="3">
+            <span class="field__error" id="signup-fullname-error"></span>
+          </div>
+          <div class="field">
+            <label for="signup-password" class="visually-hidden">Password</label>
+            <input type="password" id="signup-password" name="password" placeholder="Enter Your Password" autocomplete="new-password" data-label="Password" aria-describedby="signup-password-error" required minlength="6">
+            <span class="field__error" id="signup-password-error"></span>
+          </div>
+        <button type="submit" class="btn btn--primary btn--block">SignUp</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="auth-card__switch">Already have an account? <a href="login.html">Login</a></p>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="assets/js/main.js?v=2" defer></script>
+</body>
+</html>

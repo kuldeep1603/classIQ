@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /login.html
+Disallow: /signup.html
+
+Sitemap: https://www.classiq.com/sitemap.xml

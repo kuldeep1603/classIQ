@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Courses | ClassIQ</title>
+  <meta name="description" content="Browse all ClassIQ courses in web development, data science and app development. Enroll in your favourite courses and learn at your own pace.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c2f578">
+  <link rel="canonical" href="https://www.classiq.com/courses.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ClassIQ">
+  <meta property="og:title" content="All Courses | ClassIQ">
+  <meta property="og:description" content="Browse all ClassIQ courses in web development, data science and app development. Enroll in your favourite courses and learn at your own pace.">
+  <meta property="og:url" content="https://www.classiq.com/courses.html">
+  <meta property="og:image" content="https://www.classiq.com/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/poppins-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/memoji-laptop.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="ClassIQ home">
+        <img src="assets/images/logo.svg" width="49" height="49" alt="">
+        <span>ClassIQ</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="courses.html">Dashboard</a></li>
+        </ul>
+        <div class="nav-actions" data-auth-actions>
+          <a href="login.html" class="btn btn--dark">Login</a>
+          <a href="signup.html" class="btn btn--dark">SignUp</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <section class="banner" aria-labelledby="banner-title">
+        <h1 id="banner-title">Enroll in Your Fav Courses</h1>
+        <div class="banner__media">
+          <img src="assets/images/memoji-laptop.webp" width="210" height="282" alt="ClassIQ student avatar studying on a laptop" fetchpriority="high">
+        </div>
+      </section>
+
+      <section class="courses" aria-labelledby="courses-title">
+        <div class="courses__head">
+          <h2 class="courses__title" id="courses-title">
+            All Courses
+            <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"/></svg>
+          </h2>
+          <div class="filters" role="group" aria-label="Filter courses by category">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="web" aria-pressed="false">Web Development</button>
+            <button type="button" data-filter="data" aria-pressed="false">Data Science</button>
+            <button type="button" data-filter="app" aria-pressed="false">App Development</button>
+          </div>
+        </div>
+
+        <div class="courses__grid" data-courses aria-live="polite">
+          <noscript><p class="courses__empty">Please enable JavaScript to browse our courses.</p></noscript>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo" aria-label="ClassIQ home">
+            <img src="assets/images/logo.svg" width="41" height="41" alt="" loading="lazy">
+            <span>ClassIQ</span>
+          </a>
+          <h2>Subscribe</h2>
+          <p>Subscribe for the latest courses, tips, and updates. Join our learning community today!</p>
+          <form class="subscribe" data-subscribe novalidate>
+            <label for="subscribe-email" class="visually-hidden">Email address</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="Enter your email" autocomplete="email" required>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </div>
+
+        <nav class="footer__col" aria-labelledby="footer-business">
+          <h3 id="footer-business">ClassIQ Business</h3>
+          <ul>
+            <li><a href="#">Teach on ClassIQ</a></li>
+            <li><a href="#">Teaching Tools</a></li>
+            <li><a href="#">ClassIQ app</a></li>
+            <li><a href="mailto:hello@classiq.com">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-labelledby="footer-careers">
+          <h3 id="footer-careers">Careers</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2024</span> ClassIQ. All rights reserved.</p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ClassIQ on Instagram">
+              <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="ClassIQ on X">
+              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="ClassIQ on LinkedIn">
+              <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="assets/js/main.js?v=2" defer></script>
+</body>
+</html>

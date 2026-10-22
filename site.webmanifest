@@ -1,0 +1,12 @@
+{
+  "name": "ClassIQ - Online Learning",
+  "short_name": "ClassIQ",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#c2f578",
+  "icons": [
+    { "src": "assets/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
